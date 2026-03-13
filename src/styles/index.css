@@ -1,11 +1,41 @@
-/* 
+@import "tailwindcss";
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+@theme {
+  --color-nalu-bg: #0f2427;
+  --color-nalu-card: #112628;
+  --color-nalu-teal: #3eb8c0;
+  --color-nalu-sand: #c8a97a;
+  --color-nalu-text: #e8f4f5;
 
-*/
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --radius-pill: 100px;
+}
+
+/* Nalu design tokens */
+:root {
+  --bg-deep: #0a1a1c;
+  --bg-mid: #0f2427;
+  --bg-card: #112628;
+  --teal: #3eb8c0;
+  --teal-glow: #5dd4db;
+  --teal-mid: #2a7a80;
+  --sand: #c8a97a;
+  --sand-light: #e4c99a;
+  --text: #e8f4f5;
+  --text-mid: #8fb8bc;
+  --text-muted: #4a7a80;
+  --success: #4cba82;
+  --warning: #e0a040;
+  --error: #e07070;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-deep);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+  }
+}
